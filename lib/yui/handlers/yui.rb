@@ -6,7 +6,7 @@ module Lita
       # Lita HTTPRoute for Slack: Outgoing WebHook integration
       route /help\s+(.+)/, :help
 
-      route /\@?[Yy]ui\s[hello|hi]/, :hello
+      route \@?[Yy]ui\s(hello|hi), :hello
 
       route /want\sto\s+(.+)/, :want_to
 
