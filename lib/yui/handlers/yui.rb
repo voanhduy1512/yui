@@ -10,9 +10,8 @@ module Yui
       def self.default_config(default)
       end
 
-      def help(req, res)
-        res.status = 200
-        res.body = "Hello, I am Yui"
+      def help(message)
+        binding.pry
         # log.debug "SlackHandler::receive webhook_token:#{req['token']} team_domain:#{req['team_domain']}"
         # log.debug "SlackHandler::receive user id:#{req['user_id']} name:#{req['user_name']}"
         # log.debug "SlackHandler::receive room id:#{req['channel_id']} name:#{req['channel_name']}"
