@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'yui/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "sss-yui"
+  spec.name          = "yui"
   spec.version       = Yui::VERSION
   spec.authors       = ["Võ Anh Duy"]
   spec.email         = ["voanhduy1512@live.com"]
