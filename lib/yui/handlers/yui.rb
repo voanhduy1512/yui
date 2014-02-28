@@ -4,9 +4,9 @@ module Lita
   module Handlers
     class YuiHandler < Handler
       # Lita HTTPRoute for Slack: Outgoing WebHook integration
-      route /^yui\shelp\s+(.+)/, :help
+      route /help\s+(.+)/, :help
 
-      route /^yui\swant\sto\s+(.+)/, :want_to
+      route /want\sto\s+(.+)/, :want_to
 
       # Class method called by Lita for handler configuration
       def self.default_config(default)
