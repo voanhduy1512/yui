@@ -6,11 +6,11 @@ module Lita
       # Lita HTTPRoute for Slack: Outgoing WebHook integration
       route /\@?[Yy]ui\shelp\s+(.+)/, :help
 
-      route /say\shello\s+(.+)/, :global_hello
+      route /\@?[Yy]ui\ssay\shello\s+(.+)/, :global_hello
 
       route /\@?[Yy]ui\s(hello|hi)/, :hello
 
-      route /want\sto\s+(.+)/, :want_to
+      route /\@?[Yy]ui\swant\sto\s+(.+)/, :want_to
 
       # Class method called by Lita for handler configuration
       def self.default_config(default)
